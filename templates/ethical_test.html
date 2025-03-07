@@ -1,0 +1,19 @@
+<head>
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Ethical Test</h2>
+        <h4>It is ethical for a manager to disclose confidential employee information to unauthorized personnel.</h4>
+        <form action="/test_result" method="POST">
+            <input type="radio" name="answer" id="true" value="true">true</input><br>
+            <input type="radio" name="answer" id="false" value="false">false</input><br>
+            <input type="submit" value="Enter">
+        </form>
+        <form action="/main" method="POST">
+            <input type="submit" value="Main">
+        </form>
+    </div>
+</body>
