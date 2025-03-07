@@ -20,7 +20,7 @@ def test_result():
     answer = request.form.get("answer")
     if answer == "false":
         return(render_template("pass.html"))
-    if answer == "true":
+    elif answer == "true":
         return(render_template("fail.html"))
 
 if __name__ == "__main__":
