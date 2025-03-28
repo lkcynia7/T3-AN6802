@@ -1,0 +1,18 @@
+<head>
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Predict Food Expenditure</h2>
+        <h4>Please enter your income </h4>
+        <input type="number" id="salary" placeholder="salary">
+        <button class="btn" onclick="predict_foodexp()">Enter</button>
+        <p id="foodexp"></p>
+        <form action="/main" method="POST">
+            <input type="submit" value="Main">
+        </form>
+        <script src="{{url_for('static', filename='foodexp.js')}}"></script>
+    </div>
+</body>
