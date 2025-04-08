@@ -1,11 +1,11 @@
 from flask import Flask, request, render_template
-import requests
 import sqlite3
 import datetime
 import google.generativeai as genai
 import os
 import wikipedia
 import time
+import threading
 
 api = os.getenv("makersuite")
 model = genai.GenerativeModel("gemini-1.5-flash")
