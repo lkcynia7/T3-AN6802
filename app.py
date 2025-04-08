@@ -12,9 +12,9 @@ api = os.getenv("makersuite")
 model = genai.GenerativeModel("gemini-1.5-flash")
 genai.configure(api_key=api)
 
-# TELEGRAM_API = os.getenv("lkcynia_bot")
-tel_api = "7227021333:AAHjh1V4aAmneDQooX6I2nQbCQvHBa6UpS8"
-BASE_URL = f"https://api.telegram.org/bot{tel_api}/"
+TELEGRAM_API = os.getenv("lkcynia_bot")
+# TELEGRAM_API = ""
+BASE_URL = f"https://api.telegram.org/bot{TELEGRAM_API}/"
 
 app = Flask(__name__)
 flag = 1
